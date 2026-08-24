@@ -1,4 +1,4 @@
-# 📚 Softverski sistem za evidenciju iznajmljivanja knjiga
+# Softverski sistem za evidenciju iznajmljivanja knjiga
 
 Seminarski rad iz predmeta **Projektovanje softvera**, Univerzitet u Beogradu — Fakultet organizacionih nauka, Katedra za softversko inženjerstvo.
 
@@ -8,7 +8,7 @@ Seminarski rad iz predmeta **Projektovanje softvera**, Univerzitet u Beogradu �
 
 ---
 
-## 📖 O projektu
+## O projektu
 
 Sistem je razvijen kao rešenje za evidenciju izdavanja knjiga u biblioteci — praćenje članova, knjiga, iznajmljivanja i rasporeda dežurstava zaposlenih. Projekat je rađen po metodologiji **Larman** (Craig Larman), kroz sve faze softverskog inženjerstva:
 
@@ -20,7 +20,7 @@ Sistem je razvijen kao rešenje za evidenciju izdavanja knjiga u biblioteci — 
 
 Detaljan opis celog procesa dostupan je u priloženom radu: [`SEMINARSKI.pdf`](./SEMINARSKI.pdf).
 
-## 🏗️ Arhitektura
+## Arhitektura
 
 Sistem je realizovan kao **klijent-server aplikacija** prema **MVC (trosloJnoj)** arhitekturi, sa komunikacijom preko mrežnih soketa (razmena serijalizovanih Java objekata `Zahtev` / `Odgovor`).
 
@@ -34,7 +34,7 @@ Sistem je realizovan kao **klijent-server aplikacija** prema **MVC (trosloJnoj)*
 - **Aplikaciona logika** — kontroler, poslovna logika (sistemske operacije) i broker baze podataka
 - **Skladište podataka** — relaciona baza podataka
 
-## 🧩 Glavni koncepti sistema
+## Glavni koncepti sistema
 
 | Koncept | Funkcionalnosti |
 |---|---|
@@ -45,7 +45,7 @@ Sistem je realizovan kao **klijent-server aplikacija** prema **MVC (trosloJnoj)*
 | Kategorija člana | Kreiraj, Pretraži, Promeni, Obriši |
 | Termin dežurstva | Ubaci, Pretraži, Promeni, Obriši |
 
-## 🛠️ Tehnologije
+## Tehnologije
 
 - **Java 17**
 - **MySQL** (MariaDB 10.4.32) — relaciona baza podataka
@@ -53,7 +53,7 @@ Sistem je realizovan kao **klijent-server aplikacija** prema **MVC (trosloJnoj)*
 - **NetBeans IDE 15** — razvojno okruženje
 - Komunikacija preko **Java soketa** (`ObjectOutputStream` / `ObjectInputStream`)
 
-## 📂 Struktura projekta
+## Struktura projekta
 
 **Serverski projekat** sadrži: kontroler aplikacione logike, sistemske operacije za sve entitete (član, iznajmljivanje, knjiga, kategorija, zaposleni, dežurstvo), broker baze podataka (`DbRepositoryGeneric`) i konfiguracione forme (baza, port).
 
